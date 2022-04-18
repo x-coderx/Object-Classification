@@ -57,7 +57,7 @@ Our 2-layer neural network has (72%) accuracy.
 
 ## L-layer Neural Network
 
-Using the helper functions to build our $L$-layer neural network with the following structure: *[LINEAR -> RELU]$\times$(L-1) -> LINEAR -> SIGMOID*.
+Using the helper functions to build our L-layer neural network with the following structure: *[LINEAR -> RELU] X (L-1) -> LINEAR -> SIGMOID*.
 ```python
 def initialize_parameters_deep(layers_dims):
     ...
@@ -77,4 +77,4 @@ def update_parameters(parameters, grads, learning_rate):
 ```
 
 # Result : 
-Our 4-layer neural network has better performance (80%) than your 2-layer neural network (72%) on the same test set.
+Our 4-layer neural network has better performance (80%) than our 2-layer neural network (72%) on the same test set.
