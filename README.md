@@ -7,6 +7,26 @@ We have a dataset ("data.h5") containing:
 - a test set of m_test images labelled as cat and non-cat
 - each image is of shape (num_px, num_px, 3) where 3 is for the 3 channels (RGB).
 
+### Pre-Requisites :
+#### For Mac user:
+Create a project directory and open a terminal instance in project directory. Run following commands to setup environment and pre-requisites.
+- Get source code : git clone https://github.com/x-coderx/ObjectClassification.git
+- Install Python : brew install python@3.9
+- Create your virtual environment : python3.9 -m venv venv
+- Activating your virtual environment : source venv/bin/activate
+- Install Requirements : python3.9 -m pip install -r requirements.txt
+- Finally, run "Deep Neural Network - Application v8.ipynb"
+
+#### For Windows user:
+Create a project directory and open a cmd instance in project directory. Run following commands to setup environment and pre-requisites.
+- Get source code : git clone https://github.com/x-coderx/ObjectClassification.git
+- Download latest python version from : https://www.python.org/ftp/python/3.12.1/python-3.12.1-macos11.pkg and install.
+- Create your virtual environment : python -m venv venv
+- Activating your virtual environment : venv\scripts\activate
+- Install Requirements : python -m pip install -r requirements.txt
+- Finally, run "Deep Neural Network - Application v8.ipynb"
+
+
 ### Understanding Image :
 We have 64 X 64 total pixels for each image and every pixel is a combination of RGB colors. Which implies that our input image can be depicted as vector of shape (64,64,3). Since each pixel is an important feature (similalry each color contibution is an important feature) which will determine Cat or not Cat.
 Idea is to flatten our array to shape of (n_x,1) for each image and arrange them vertically for all training set of shape (n_x,m).
